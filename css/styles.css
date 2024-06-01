@@ -1,0 +1,223 @@
+body{
+  
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* nav section here */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 85px 120px;
+}
+nav ul{
+    display: flex;
+    gap: 34px;
+    margin-top: 30px;
+}
+nav li{
+    list-style: none;
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-title{
+    color: rgb(58, 58, 58);
+    font-size: 24px;
+    font-weight: 700;
+}
+/* banner section here */
+.banner-container{
+    display: flex;
+    margin: 0px 120px;
+}
+.banner-content{
+    margin-right: 133px;
+}
+.banner-title{
+    color: rgb(58, 58, 58);
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.banner-description{
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.btn-primary{
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    border: 0;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+}
+.fa-solid{
+    padding: 10px;
+}
+.banner-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 475px;
+    height: 475px;
+}
+.circle{
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+.banner-image .maincam{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+/* logo section here */
+.logo-container{
+    margin: 70px 165px 100px;
+    padding: 60px;
+}
+.logo-container img{
+    margin-right: 65px;
+      
+}
+.main-title{
+    color: rgb(58, 58, 58);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.main-item{
+    margin: 0 195px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.main-container{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 15px;
+}
+.main-img img{
+    width: 100%;
+    height: 100%;
+}
+.main-head1{
+    color: rgb(24, 25, 31);
+    font-size: 28px;
+    font-weight: 500;
+}
+.main-head2{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
+}
+.main-description1{
+    color: rgb(94, 99, 102);
+    font-size: 14px;
+    font-weight: 700;
+}
+.main-description2{
+    color: rgb(120, 120, 133);
+    font-size: 14px;
+    font-weight: 700;
+    width: 196px;
+}
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute; 
+    /* bottom: px; */
+    right: 100px;
+    margin-top: 0;
+}
+.feature-container{
+    display: flex;
+    margin: 120px 165px 100px;
+}
+.feature-item{
+    margin-left: 95px;
+}
+.feature-title{
+    color: rgb(10, 8, 38);
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 23px;
+    margin-bottom: 16px;
+}
+.feature-description{
+    color: rgb(108, 108, 108);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+#another-btn{
+    border-radius: 0px;
+    
+}
+footer{
+    
+    text-align: center;
+    background: rgb(24, 22, 22);
+}
+.footer-title{
+    padding-top: 50px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-description{
+
+    color: rgb(217, 219, 225);
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer-logo{
+    padding-bottom: 50px;
+}
+/* responsive css here */
+
+/* mobile device responsive */
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .banner-container
+    {
+        flex-direction: column;
+    }
+    .nav-title{
+        margin-left: 200px;
+    }
+    .nav-container,
+    .banner-content
+    {
+        margin-left: auto;
+        text-align: center;
+    }
+    nav ul,
+    .banner-image{
+        margin-left: 0px;
+    }
+    .banner-image{
+        width: auto;
+        height: auto;
+    }
+    .banner-image .circle,
+    .banner-image .maincam
+    {
+        position: absolute;
+    }
+
+}
